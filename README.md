@@ -1,57 +1,50 @@
-# Meal Delivery Analysis
+# MealX — Meal Delivery Analysis
 
-This repository contains the SQL queries used to uncover key operational insights for a meal delivery service — including scaling performance, improving efficiency, and analyzing the impact of promotional campaigns. 
+SQL-backed analysis of a meal delivery service: operations, efficiency, promotions, and scaling.
 
-## 📁 Files Included
+---
 
-- `data_cleaning.sql` – Queries used to clean and prepare the dataset.
-- `exploratory_analysis.sql` – Queries used to uncover insights on meal demand, center performance, and promotional impact.
-- `dashboard_screenshot.png` – Visual snapshot of Excel dashboard.
+## Contents
 
-## 🔍 Key Insights
+| File | Role |
+|------|------|
+| `data_cleaning.sql` | Clean and prepare the dataset |
+| `exploratory_analysis.sql` | Demand, center performance, promotional impact |
+| `dashboard_screenshot.png` | Excel dashboard snapshot |
 
-- **Rice Bowls** dominate in revenue, with one meal alone generating over ₦2.4B. **Beverages** drive the highest total revenue due to consistent volume across orders.
-- **Promotions** increased weekly orders nearly 3x, but unregulated discounting suggests revenue leakage. Targeted, margin-aware strategies are needed.
-- **Center Type A** is the most scalable — balancing high order volume and coverage with strong operational efficiency.
-- **Order spikes** in Weeks 5, 48, 53, and 60 hint at seasonal or event-driven demand. This calls for smarter forecasting and promotional alignment.
-- **Italian meals** and **Beverages** show sustained appeal, supporting a strategy that balances flagship items with volume drivers.
+---
 
-  ## 📊 Dashboard Preview
+## Insights
+
+- **Rice Bowls** lead on revenue (one meal > ₦2.4B). **Beverages** drive highest total revenue from volume.
+- **Promotions** lifted weekly orders ~3×; unregulated discounts suggest revenue leakage → need targeted, margin-aware campaigns.
+- **Center Type A** is most scalable: high volume, coverage, and efficiency.
+- **Order spikes** in Weeks 5, 48, 53, 60 → seasonal or event-driven; use for forecasting and promo planning.
+- **Italian** and **Beverages** hold strong appeal → balance flagship items with volume drivers.
+
+---
+
+## Dashboard
 
 ![Excel Dashboard](dashboard_screenshot.png)
 
+---
 
-## Documentation
+## Data limitations
 
-👉 [Read the full analysis and recommendations on Medium](https://medium.com/@opadojajoshua/optimizing-meal-delivery-a-strategic-analysis-0d2e637f68e3)  
-(Includes detailed thought process, reasoning behind key insights, and strategic takeaways)
+1. **No year in weekly data** — week IDs span 145+ values but no year; limits cross-year trends and seasonality.
+2. **No cost or margin per meal** — no unit cost, waste, or profit; limits promotion and profitability analysis.
+3. **No delivery timing** — no dispatch/delivery timestamps; limits logistics and satisfaction analysis.
 
- ## ⚠️ Data Limitations
+---
 
-This analysis was conducted with a few key constraints that limit certain conclusions:
+## Stack
 
-1. **Missing Year Information in Weekly Data**  
-   Week numbers spanned over 145 values, suggesting multiple years, but no year data was included.  
-   _🔍 Impact: Prevents accurate trend or seasonality analysis across years._
+- **SQL** — Cleaning and analysis  
+- **Excel** — Dashboard and visuals
 
-2. **No Cost or Profit Margin Data Per Meal**  
-   The dataset lacked true unit costs, waste data, or profit margin metrics for individual meals.  
-   _🔍 Impact: Limits financial depth and confidence in promotion/profitability recommendations._
+---
 
-3. **Absence of Delivery Timing or Delay Metrics**  
-   No timestamps for dispatch or delivery were available.  
-   _🔍 Impact: Restricts analysis on logistics, timeliness, and customer satisfaction._
+## Support
 
-
-##  🛠️ Tools Used
-
-- SQL (Data Cleaning & Analysis)
-- Excel (Dashboard & Visualizations)
-
-## 👤 Author
-
-**Joshua Opadoja**  
-Data Analyst | Solving problems using data and code
- 
- 🔗 [LinkedIn](https://www.linkedin.com/in/joshua-opadoja-5682592b5)
- 🔗 [X(Twitter)](https://x.com/JDataCraft?t=lf1r_jM5QHj6FRG15XdNTA&s=09)
+If you find this useful, consider starring the repo.
